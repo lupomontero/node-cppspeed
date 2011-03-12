@@ -10,6 +10,7 @@ var
 
     return "something";
   },
+  log = function (str) { process.stdout.write(str + '\n'); },
   start, fooTime, cppfooTime;
 
 start = +new Date();
@@ -20,6 +21,6 @@ start = +new Date();
 cppfoo();
 cppfooTime = +new Date() - start;
 
-process.stdout.write('foo run in ' + fooTime + 'ms\n');
-process.stdout.write('cppfoo run in ' + cppfooTime + 'ms\n');
-process.stdout.write('c++ was ' + (fooTime/cppfooTime).toFixed(1) + ' times faster');
+log('foo run in ' + fooTime + 'ms');
+log('cppfoo run in ' + cppfooTime + 'ms');
+log('c++ was ' + (fooTime/cppfooTime).toFixed(1) + ' times faster');
