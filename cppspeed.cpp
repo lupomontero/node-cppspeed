@@ -3,8 +3,8 @@
 #include <node.h>
 
 using namespace std;
-using namespace node;
 using namespace v8;
+using namespace node;
 
 static Handle<Value> foo(const Arguments& args)
 {
