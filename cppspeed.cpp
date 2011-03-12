@@ -15,6 +15,8 @@ static Handle<Value> foo(const Arguments& args)
     j = i + 1;
     str += "a";
   }
+
+  return String::New("something");
 }
 
 extern "C" {

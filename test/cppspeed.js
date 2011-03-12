@@ -8,7 +8,7 @@ var
       str += 'a';
     }
 
-    return "Ha ha ha";
+    return "something";
   },
   start, fooTime, cppfooTime;
 
