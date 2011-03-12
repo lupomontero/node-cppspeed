@@ -15,14 +15,14 @@ def configure(conf):
 
 def build(bld):
   obj = bld.new_task_gen("cxx", "shlib", "node_addon")
-  obj.target = "cpphello"
-  obj.source = "cpphello.cpp"
+  obj.target = "cppspeed"
+  obj.source = "cppspeed.cpp"
   obj.cxxflags = ["-D_FILE_OFFSET_BITS=64", "-D_LARGEFILE_SOURCE"]
 
 def shutdown():
   if Options.commands['clean']:
-    if exists('cpphello.node'): unlink('cpphello.node')
+    if exists('cppspeed.node'): unlink('cppspeed.node')
   else:
-    if exists('build/default/cpphello.node') and not exists('cpphello.node'):
-      symlink('build/default/cpphello.node', 'cpphello.node')
+    if exists('build/default/cppspeed.node') and not exists('cppspeed.node'):
+      symlink('build/default/cppspeed.node', 'cppspeed.node')
 
