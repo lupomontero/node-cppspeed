@@ -11,7 +11,9 @@ Download, build and test instructions:
 
     $ node test/cppspeed.js
 
-    foo run in 167ms
-    cppfoo run in 18ms
-    c++ was 9.3 times faster
+    foo 1 run in 171ms
+    foo 2 run in 109ms
+    cppfoo run in 19ms
+    c++ was 9.0 times faster (fooTime1)
+    c++ was 5.7 times faster (fooTime2)
 
