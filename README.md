@@ -17,3 +17,7 @@ Download, build and test instructions:
     c++ was 9.0 times faster (fooTime1)
     c++ was 5.7 times faster (fooTime2)
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/lupomontero/node-cppspeed/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
