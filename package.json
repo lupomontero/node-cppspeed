@@ -1,0 +1,10 @@
+{
+  "name": "cppspeed",
+  "version": "1.0.0",
+  "description": "Node.js modules speed test: C++ vs JavaScript",
+  "main": "./build/Release/cppspeed.node",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "gypfile": true
+}
