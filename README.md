@@ -1,23 +1,31 @@
 # Node.js modules speed test: C++ vs JavaScript
 
-Download, build and test instructions:
+[![Build Status](https://travis-ci.org/lupomontero/node-cppspeed.svg?branch=master)](https://travis-ci.org/lupomontero/node-cppspeed)
 
-    $ git clone git://github.com/lupomontero/node-cppspeed.git
-    ...
+## Download and build
 
-    $ cd node-cppspeed
-    $ node-waf configure build
-    ...
+```sh
+# Install node-gyp globally if not installed yet
+npm install -g node-gyp
 
-    $ node test/cppspeed.js
+# Clone, build and test
+git clone git://github.com/lupomontero/node-cppspeed.git
+cd node-cppspeed
+node-gyp configure build
+```
 
-    foo 1 run in 171ms
-    foo 2 run in 109ms
-    cppfoo run in 19ms
-    c++ was 9.0 times faster (fooTime1)
-    c++ was 5.7 times faster (fooTime2)
+## Run
 
+```sh
+npm test
+```
 
+You should see output like below:
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/lupomontero/node-cppspeed/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
+```
+foo 1 run in 100ms
+foo 2 run in 59ms
+cppfoo run in 5ms
+c++ was 20.0 times faster (fooTime1)
+c++ was 11.8 times faster (fooTime2)
+```
